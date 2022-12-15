@@ -1,0 +1,85 @@
+@media (max-width: 1250px) {
+    header {
+        padding: 13px 3%;
+    }
+
+    section, footer {
+        padding: 40px 3% 50px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .navbar .header-icons #menu-icon {
+        display: inline-flex;
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: -800px;
+        left: 0;
+        background-color: var(--main-color);
+        width: 100%;
+        height: 45vh;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        transition: all 0.50s ease;
+    }
+
+    .navbar ul.active {
+        top: 100%;
+    }
+
+    .navbar ul li a {
+        display: block;
+        font-size: 20px;
+        padding: 16px 0;
+        font-weight: 600;
+    }
+
+    .navbar ul li a:hover {
+        color: #f4f4f4;
+    }
+    
+    .scroll-button {
+        right: 2rem;
+        bottom: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --h1-font: 3.1rem;
+        --h2-font: 2rem;
+        --p-font: 1rem;
+    }
+
+    .home {
+        height: 85vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar .header-icons i {
+        display: none;
+    }
+
+    .home-text h1 {
+        line-height: 1.1;
+    }
+
+    .banner, .new-content, .latest-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+}
+
+@media (max-width: 350px) {
+    .home-text {
+        padding-top: 2.5rem;
+    }
+
+    .home-text .home-button {
+        margin-top: 1.8rem;
+    }
+}
