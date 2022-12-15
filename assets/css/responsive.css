@@ -1,6 +1,6 @@
 @media (max-width: 1250px) {
     header {
-        padding: 13px 3%;
+        padding: 12px 3%;
     }
 
     section, footer {
@@ -53,9 +53,9 @@
         --h2-font: 2rem;
         --p-font: 1rem;
     }
-    
-    .home {
-        height: 85vh;
+
+    .footer-content ul li a:hover {
+        transform: translateX(0);
     }
     
     .scroll-button {
@@ -75,11 +75,6 @@
 
     .banner, .new-content, .latest-content {
         grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    }
-
-    .footer-content ul li a:hover {
-        transform: translateX(0);
-        color: #f4f4f4;
     }
 }
 
