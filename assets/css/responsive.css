@@ -82,7 +82,7 @@
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
     .home-text .home-button {
         margin-top: 1.8rem;
     }

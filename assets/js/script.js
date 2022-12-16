@@ -1,12 +1,17 @@
 const scrollButton = document.querySelector(".scroll-button")
 const menuIcon = document.querySelector("#menu-icon")
 const navBar = document.querySelector(".navbar ul")
-const dataClick = document.querySelectorAll("[data-click]")
+const dataLink = document.querySelectorAll("[data-click]")
 
 scrollButton.addEventListener("click", function(event) {
     event.preventDefault()
-
     window.scrollTo(0, 0)
+})
+
+dataLink.forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault()
+    })
 })
 
 menuIcon.addEventListener("click", function() {
@@ -29,9 +34,3 @@ const hideScrollButton = function() {
 }
 window.addEventListener("scroll", hideScrollButton)
 hideScrollButton()
-
-dataClick.forEach(data => {
-    data.addEventListener("click", function(event) {
-        event.preventDefault()
-    })
-})

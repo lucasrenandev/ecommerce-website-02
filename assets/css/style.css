@@ -157,7 +157,7 @@ section {
 
 .banner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
     gap: 2.5rem;
 }
@@ -279,7 +279,7 @@ section {
 
 .latest-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
     gap: 2.5rem;
     margin-top: 4.5rem;
