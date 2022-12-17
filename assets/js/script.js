@@ -1,14 +1,14 @@
 const scrollButton = document.querySelector(".scroll-button")
 const menuIcon = document.querySelector("#menu-icon")
 const navBar = document.querySelector(".navbar ul")
-const dataLink = document.querySelectorAll("[data-click]")
+const navLink = document.querySelectorAll("[data-link]")
 
 scrollButton.addEventListener("click", function(event) {
     event.preventDefault()
     window.scrollTo(0, 0)
 })
 
-dataLink.forEach(link => {
+navLink.forEach(link => {
     link.addEventListener("click", function(event) {
         event.preventDefault()
     })
